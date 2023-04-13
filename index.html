@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My GitHub Pages Browser</title>
+  </head>
+  <body>
+    <input type="text" id="url" placeholder="Enter a URL">
+    <button onclick="go()">Go</button>
+    <br>
+    <iframe id="browser" width="100%" height="500"></iframe>
+
+    <script>
+      function go() {
+        var url = document.getElementById("url").value;
+        document.getElementById("browser").src = url;
+      }
+    </script>
+  </body>
+</html>
